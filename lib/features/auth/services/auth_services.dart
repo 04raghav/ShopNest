@@ -70,8 +70,8 @@ class AuthServices {
             await prefs.setString(
                 'x-auth-token', jsonDecode(res.body)['token']);
 
-            Navigator.pushNamedAndRemoveUntil(
-                context, HomeScreen.routeName, (route) => false);
+            if(context.mounted){Navigator.pushNamedAndRemoveUntil(
+                context, HomeScreen.routeName, (route) => false);}
           });
     } catch (e) {
       ShowSnackBar(context, e.toString());
