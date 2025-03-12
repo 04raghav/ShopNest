@@ -45,8 +45,8 @@ class _MyAppState extends State<MyApp> {
               iconTheme: IconThemeData(color: Colors.black),
             )),
         onGenerateRoute: (settings) => generateRoute(settings),
-        home: Provider.of<UserProvider>(context).user.token.isNotEmpty
-            ? const BottomBar()
-            : const AuthScreen());
+        home: Provider.of<UserProvider>(context).user.token.isEmpty
+            ? const AuthScreen()
+            : const BottomBar());
   }
 }

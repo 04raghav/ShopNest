@@ -1,5 +1,7 @@
 import 'package:amazon_clone1/constants/global_variables.dart';
 import 'package:amazon_clone1/features/account/widgets/below_appbar.dart';
+import 'package:amazon_clone1/features/account/widgets/orders.dart';
+import 'package:amazon_clone1/features/account/widgets/top_buttons.dart';
 import 'package:flutter/material.dart';
 
 class AccountScreen extends StatelessWidget {
@@ -49,6 +51,14 @@ class AccountScreen extends StatelessWidget {
       body: Column(
         children: const [
           BelowAppBar(),
+          SizedBox(
+            height: 10,
+          ),
+          TopButtons(),
+          SizedBox(
+            height: 20,
+          ),
+          Orders()
         ],
       ),
     );
