@@ -45,7 +45,7 @@ authRouter.post('/api/signin',async (req,res)=>{
         if(!isMatch){
             return res.status(400).json({msg:'Incorrect Password'})
         }
-        const token = jwt.sign({id: user._id},"passwordKey");
+        const token = jwt.sign({id: user._id},"passwordKey");//token is unique as userid is unique and passwordKey is used as a validation for the backend and that token is not tampered
         res.json({token,...user._doc});
     }
     catch(e){
@@ -55,12 +55,12 @@ authRouter.post('/api/signin',async (req,res)=>{
 
 authRouter.post("/tokenIsValid" , async (req,res)=>{
     try{
-        const token = req.header('x-auth-token');
+        const token = req.header('x-auth-token');//frontend sends token in header
         if(!token) return res.json(false);
         const verified = jwt.verify(token, 'passwordKey');
         if(!verified) return res.json(false);
         
-        const user = await User.findById(verified.id);
+        const user = await User.findById(verified.id);//checking is user in database
         if(!user) return res.json(false);
         res.json(true);
 
