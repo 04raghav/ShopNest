@@ -22,13 +22,14 @@ class _AddProductScreenState extends State<AddProductScreen> {
   final TextEditingController descriptionController = TextEditingController();
   final TextEditingController priceController = TextEditingController();
   final TextEditingController quantityController = TextEditingController();
+  final AdminServices adminServices = AdminServices();
 
   String category = 'Mobiles';
 
   List<File> images = [];
   final _addproductFormKey = GlobalKey<FormState>();
 
-  final AdminServices adminServices = AdminServices();
+  
 
   @override
   void dispose() {
