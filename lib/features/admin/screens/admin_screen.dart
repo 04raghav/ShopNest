@@ -1,7 +1,8 @@
-import 'package:amazon_clone1/constants/global_variables.dart';
-import 'package:amazon_clone1/features/account/screens/account_screen.dart';
-import 'package:amazon_clone1/features/admin/screens/posts_screen.dart';
-import 'package:amazon_clone1/features/home/screens/home_screen.dart';
+import 'package:shopnest/constants/global_variables.dart';
+import 'package:shopnest/features/account/screens/account_screen.dart';
+import 'package:shopnest/features/admin/screens/analytics_page.dart';
+import 'package:shopnest/features/admin/screens/posts_screen.dart';
+import 'package:shopnest/features/home/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 
@@ -19,8 +20,8 @@ class _AdminScreenState extends State<AdminScreen> {
 
   List<Widget> pages = [
     const PostsScreen(),
-    Center(child: const Text("Analytics Page")),
-    Center(child: const Text("Cart Page")),
+    const AnalyticsScreen(),
+    //Center(child: const Text("Cart Page")),
   ];
 
   void updatePage(int page) {
@@ -56,6 +57,7 @@ class _AdminScreenState extends State<AdminScreen> {
                 'Admin',
                 style: TextStyle(fontWeight: FontWeight.w500),
               ),
+          
             ],
           ),
         ),
@@ -110,25 +112,25 @@ class _AdminScreenState extends State<AdminScreen> {
             label: '',
           ),
           // ORDERS
-          BottomNavigationBarItem(
-            icon: Container(
-              width: bottomBarWidth,
-              decoration: BoxDecoration(
-                border: Border(
-                  top: BorderSide(
-                    color: _page == 2
-                        ? GlobalVariables.selectedNavBarColor
-                        : GlobalVariables.backgroundColor,
-                    width: bottomBarBorderWidth,
-                  ),
-                ),
-              ),
-              child: const Icon(
-                Icons.all_inbox_outlined,
-              ),
-            ),
-            label: '',
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Container(
+          //     width: bottomBarWidth,
+          //     decoration: BoxDecoration(
+          //       border: Border(
+          //         top: BorderSide(
+          //           color: _page == 2
+          //               ? GlobalVariables.selectedNavBarColor
+          //               : GlobalVariables.backgroundColor,
+          //           width: bottomBarBorderWidth,
+          //         ),
+          //       ),
+          //     ),
+          //     child: const Icon(
+          //       Icons.all_inbox_outlined,
+          //     ),
+          //   ),
+          //   label: '',
+          // ),
         ],
       ),
     );

@@ -1,7 +1,7 @@
-import 'package:amazon_clone1/constants/global_variables.dart';
-import 'package:amazon_clone1/features/account/widgets/below_appbar.dart';
-import 'package:amazon_clone1/features/account/widgets/orders.dart';
-import 'package:amazon_clone1/features/account/widgets/top_buttons.dart';
+import 'package:shopnest/constants/global_variables.dart';
+import 'package:shopnest/features/account/widgets/below_appbar.dart';
+import 'package:shopnest/features/account/widgets/orders.dart';
+import 'package:shopnest/features/account/widgets/top_buttons.dart';
 import 'package:flutter/material.dart';
 
 class AccountScreen extends StatelessWidget {

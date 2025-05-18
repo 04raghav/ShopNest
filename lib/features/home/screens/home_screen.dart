@@ -1,9 +1,9 @@
-import 'package:amazon_clone1/constants/global_variables.dart';
-import 'package:amazon_clone1/features/home/widgets/address_box.dart';
-import 'package:amazon_clone1/features/home/widgets/carousel_image.dart';
-import 'package:amazon_clone1/features/home/widgets/deal_of_day.dart';
-import 'package:amazon_clone1/features/home/widgets/top_categories.dart';
-import 'package:amazon_clone1/providers/user_provider.dart';
+import 'package:shopnest/constants/global_variables.dart';
+import 'package:shopnest/features/home/widgets/address_box.dart';
+import 'package:shopnest/features/home/widgets/carousel_image.dart';
+import 'package:shopnest/features/home/widgets/deal_of_day.dart';
+import 'package:shopnest/features/home/widgets/top_categories.dart';
+import 'package:shopnest/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     BorderRadius.all(Radius.circular(7)),
                                 borderSide: BorderSide(
                                     color: Colors.black38, width: 1)),
-                            hintText: "Search Amazon.in",
+                            hintText: "Search Shopnest.in",
                             hintStyle: TextStyle(
                                 fontWeight: FontWeight.w300, fontSize: 17)),
                       ),

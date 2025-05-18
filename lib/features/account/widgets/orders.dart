@@ -1,5 +1,5 @@
-import 'package:amazon_clone1/constants/global_variables.dart';
-import 'package:amazon_clone1/features/account/widgets/single_product.dart';
+import 'package:shopnest/constants/global_variables.dart';
+import 'package:shopnest/features/account/widgets/single_product.dart';
 import 'package:flutter/material.dart';
 
 class Orders extends StatelessWidget {

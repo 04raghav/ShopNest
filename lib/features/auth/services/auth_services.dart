@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:amazon_clone1/constants/global_variables.dart';
-import 'package:amazon_clone1/constants/http_erros.dart';
-import 'package:amazon_clone1/constants/utils.dart';
-import 'package:amazon_clone1/features/home/screens/home_screen.dart';
-import 'package:amazon_clone1/models/user.dart';
-import 'package:amazon_clone1/providers/user_provider.dart';
+import 'package:shopnest/constants/global_variables.dart';
+import 'package:shopnest/constants/http_erros.dart';
+import 'package:shopnest/constants/utils.dart';
+import 'package:shopnest/features/home/screens/home_screen.dart';
+import 'package:shopnest/models/user.dart';
+import 'package:shopnest/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';

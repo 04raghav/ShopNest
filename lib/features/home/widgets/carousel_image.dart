@@ -1,4 +1,4 @@
-import 'package:amazon_clone1/constants/global_variables.dart';
+import 'package:shopnest/constants/global_variables.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
