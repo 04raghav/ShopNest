@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         title: "Amazon",
         theme: ThemeData(
-            scaffoldBackgroundColor: GlobalVariables.backgroundColor,
+            scaffoldBackgroundColor: GlobalVariables.backgroundColor, 
             colorScheme: const ColorScheme.light(
                 primary: GlobalVariables.secondaryColor),
             primarySwatch: Colors.blue,
