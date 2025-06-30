@@ -1,5 +1,5 @@
-import 'package:shopnest/Common/widgets/custom_button.dart';
-import 'package:shopnest/Common/widgets/custom_textfield.dart';
+import 'package:shopnest/Common/custom_button.dart';
+import 'package:shopnest/Common/custom_textfield.dart';
 import 'package:shopnest/constants/global_variables.dart';
 import 'package:shopnest/features/auth/services/auth_services.dart';
 import 'package:flutter/material.dart';

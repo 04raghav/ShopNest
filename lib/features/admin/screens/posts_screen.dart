@@ -1,4 +1,4 @@
-import 'package:shopnest/Common/widgets/loader.dart';
+import 'package:shopnest/Common/loader.dart';
 import 'package:shopnest/constants/global_variables.dart';
 import 'package:shopnest/features/account/widgets/single_product.dart';
 import 'package:shopnest/features/admin/screens/add_product_screen.dart';
@@ -26,6 +26,9 @@ class _PostsScreenState extends State<PostsScreen> {
 
   fetchAllProducts() async {
     products = await adminServices.fetchAllProduct(context);
+    setState(() {
+      
+    });
   }
 
   void navigateToAddProduct() {

@@ -1,5 +1,6 @@
 import 'package:shopnest/constants/global_variables.dart';
 import 'package:shopnest/features/account/screens/account_screen.dart';
+import 'package:shopnest/features/cart/screens/cart_screen.dart';
 import 'package:shopnest/features/home/screens/home_screen.dart';
 import 'package:shopnest/providers/user_provider.dart';
 
@@ -23,7 +24,7 @@ class _BottomBarState extends State<BottomBar> {
   List<Widget> pages = [
     const HomeScreen(),
     const AccountScreen(),
-    Center(child: const Text("Cart Page")),
+    const CartScreen(),
   ];
 
   void updatePage(int page) {
@@ -34,6 +35,7 @@ class _BottomBarState extends State<BottomBar> {
 
   @override
   Widget build(BuildContext context) {
+    final userCartlen = Provider.of<UserProvider>(context).user.cart.length;
     return Scaffold(
       body: pages[_page],
       bottomNavigationBar: BottomNavigationBar(
@@ -101,7 +103,7 @@ class _BottomBarState extends State<BottomBar> {
               child: badges.Badge(
                 badgeStyle:
                     badges.BadgeStyle(elevation: 0, badgeColor: Colors.white),
-                badgeContent: Text('2'),
+                badgeContent: Text('$userCartlen'),
                 child: const Icon(
                   Icons.shopping_cart_outlined,
                 ),

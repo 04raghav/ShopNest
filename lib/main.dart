@@ -1,4 +1,4 @@
-import 'package:shopnest/Common/widgets/bottom_bar.dart';
+import 'package:shopnest/Common/bottom_bar.dart';
 import 'package:shopnest/constants/global_variables.dart';
 import 'package:shopnest/features/admin/screens/admin_screen.dart';
 import 'package:shopnest/features/auth/screens/auth_screen.dart';
