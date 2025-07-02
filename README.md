@@ -27,7 +27,8 @@ This app supports both **Admin** and **User** functionalities, aiming to replica
 - Persistent login state using tokens.
 
 ### 🛠️ Admin Capabilities
-![Untitled design (6)](https://github.com/user-attachments/assets/6f57cf91-a3ca-463e-9ed9-ce55bd451db7)
+![Untitled (590 x 300 px)](https://github.com/user-attachments/assets/60b93d24-ac6d-4be6-9783-b1f31a51ebc7)
+
 
 [▶️ Adding a Product ](https://drive.google.com/file/d/1VjKGDN0zfrrlxPrJ1H_GO-yk-WRystux/view?usp=sharing)
 [▶️ Update Order Status-By Admin ](https://drive.google.com/file/d/119XifHBKy5g7S3RxxKf8rPaOKYt4O2oc/view?usp=sharing)
