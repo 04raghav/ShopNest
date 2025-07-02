@@ -59,7 +59,7 @@ class _DealOfDayState extends State<DealOfDay> {
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.only(left: 15, right: 40, top: 5),
                     child: Text(
-                      'Raghav',
+                      '${product!.name}',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),

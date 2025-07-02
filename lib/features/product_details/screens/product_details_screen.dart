@@ -7,6 +7,7 @@ import 'package:shopnest/Common/custom_button.dart';
 import 'package:shopnest/Common/stars.dart';
 import 'package:shopnest/constants/global_variables.dart';
 import 'package:shopnest/constants/utils.dart';
+import 'package:shopnest/features/address/screens/address_screen.dart';
 import 'package:shopnest/features/product_details/services/product_details_services.dart';
 import 'package:shopnest/features/search/screens/search_screen.dart';
 import 'package:shopnest/models/product.dart';
@@ -221,7 +222,9 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               padding: const EdgeInsets.all(10),
               child: CustomButton(
                 text: 'Buy Now',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, AddressScreen.routeName,arguments: "${widget.product.price}");
+                },
               ),
             ),
             const SizedBox(height: 10),

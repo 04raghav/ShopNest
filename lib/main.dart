@@ -35,9 +35,11 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: "Amazon",
         theme: ThemeData(
-            scaffoldBackgroundColor: GlobalVariables.backgroundColor, 
+            useMaterial3: true,
+            scaffoldBackgroundColor: GlobalVariables.backgroundColor,
             colorScheme: const ColorScheme.light(
                 primary: GlobalVariables.secondaryColor),
             primarySwatch: Colors.blue,

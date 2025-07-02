@@ -99,8 +99,10 @@ class _AuthScreenState extends State<AuthScreen> {
                           height: 10,
                         ),
                         CustomTextfield(
-                            controller: _passwordController,
-                            hintText: 'Password'),
+                          controller: _passwordController,
+                          hintText: 'Password',
+                          hide: true,
+                        ),
                         SizedBox(
                           height: 10,
                         ),
@@ -147,8 +149,10 @@ class _AuthScreenState extends State<AuthScreen> {
                           height: 10,
                         ),
                         CustomTextfield(
-                            controller: _passwordController,
-                            hintText: 'Password'),
+                          controller: _passwordController,
+                          hintText: 'Password',
+                          hide: true,
+                        ),
                         SizedBox(
                           height: 10,
                         ),

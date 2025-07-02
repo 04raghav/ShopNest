@@ -111,32 +111,32 @@ class _CartScreenState extends State<CartScreen> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const AddressBox(),
-            const CartSubtotal(),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: CustomButton(
-                text: 'Proceed to Buy items',
-                onTap: () => {
-                  if(user.cart.length==0){
-                    ShowSnackBar(context, "Please add items to the cart")
-                    }
-                  else{
-                    navigateToAddress(sum)
-                  }},
-                color: Colors.yellow[600],
-              ),
+      body: Column(
+        children: [
+          const AddressBox(),
+          const CartSubtotal(),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: CustomButton(
+              text: 'Proceed to Buy items',
+              onTap: () => {
+                if(user.cart.length==0){
+                  ShowSnackBar(context, "Please add items to the cart")
+                  }
+                else{
+                  navigateToAddress(sum)
+                }},
+              color: Colors.yellow[600],
             ),
-            const SizedBox(height: 15),
-            Container(
-              color: Colors.black12.withOpacity(0.08),
-              height: 1,
-            ),
-            const SizedBox(height: 5),
-            ListView.builder(
+          ),
+          const SizedBox(height: 15),
+          Container(
+            color: Colors.black12.withOpacity(0.08),
+            height: 1,
+          ),
+          const SizedBox(height: 5),
+          Expanded(
+            child: ListView.builder(
               itemCount: user.cart.length,
               shrinkWrap: true,
               itemBuilder: (context, index) {
@@ -145,8 +145,8 @@ class _CartScreenState extends State<CartScreen> {
                 );
               },
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
