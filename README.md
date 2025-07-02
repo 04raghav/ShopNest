@@ -1,5 +1,7 @@
 # 🛍️ ShopNest
 
+![Untitled design (4)](https://github.com/user-attachments/assets/6cb9d453-3f88-4762-91fc-1f669d96928b)
+
 **ShopNest** is a full-stack E-commerce application built using the **Flutter** framework for the frontend and **Node.js + Express.js** for the backend. It uses **MongoDB** as the database and **Provider** for state management.
 
 This app supports both **Admin** and **User** functionalities, aiming to replicate the core features of an online retail platform.
