@@ -38,7 +38,8 @@ This app supports both **Admin** and **User** functionalities, aiming to replica
 - Manage all customer orders and update their status in real-time.
 
 ### 🧑 User Features
-![Untitled design (5)](https://github.com/user-attachments/assets/76c9a419-6d77-4261-8622-e425b4008c81)
+![Untitled design (5)](https://github.com/user-attachments/assets/aa1ef9bb-01d5-47e1-a803-81e6463093fe)
+
 
 
 [▶️ Search Feature ](https://drive.google.com/file/d/18xBeUHuicni2wbKL2EiGyODQX0lEbk4T/view?usp=sharing)
