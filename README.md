@@ -27,6 +27,8 @@ This app supports both **Admin** and **User** functionalities, aiming to replica
 - Persistent login state using tokens.
 
 ### 🛠️ Admin Capabilities
+![Untitled design (6)](https://github.com/user-attachments/assets/6f57cf91-a3ca-463e-9ed9-ce55bd451db7)
+
 [▶️ Adding a Product ](https://drive.google.com/file/d/1VjKGDN0zfrrlxPrJ1H_GO-yk-WRystux/view?usp=sharing)
 [▶️ Update Order Status-By Admin ](https://drive.google.com/file/d/119XifHBKy5g7S3RxxKf8rPaOKYt4O2oc/view?usp=sharing)
 
@@ -36,6 +38,8 @@ This app supports both **Admin** and **User** functionalities, aiming to replica
 - Manage all customer orders and update their status in real-time.
 
 ### 🧑 User Features
+![Untitled design (5)](https://github.com/user-attachments/assets/76c9a419-6d77-4261-8622-e425b4008c81)
+
 
 [▶️ Search Feature ](https://drive.google.com/file/d/18xBeUHuicni2wbKL2EiGyODQX0lEbk4T/view?usp=sharing)
 [▶️ Adding to Cart ](https://drive.google.com/file/d/1wPEuq4iedfnuU_013MSLjz0fbNcUbyJD/view?usp=sharing)
