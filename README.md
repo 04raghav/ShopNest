@@ -77,10 +77,10 @@ flutter pub get
 ```bash
 flutter run
 ```
+---
 
 ## 🔁 User Panel Navigation Flow
 
----
 ```mermaid
 flowchart LR
     %% Define styles with vibrant and random colors
