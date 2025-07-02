@@ -20,15 +20,25 @@ This app supports both **Admin** and **User** functionalities, aiming to replica
 ## 🎯 Key Features
 
 ### 🔐 Authentication
+[▶️ Authentication ](https://drive.google.com/file/d/12mWNUXpCsMPzbD04OZnVmiUoavL-HhU2/view?usp=drive_link)
 - JWT-based authentication system.
 - Persistent login state using tokens.
 
 ### 🛠️ Admin Capabilities
+[▶️ Adding a Product ](https://drive.google.com/file/d/1VjKGDN0zfrrlxPrJ1H_GO-yk-WRystux/view?usp=sharing)
+[▶️ Update Order Status-By Admin ](https://drive.google.com/file/d/119XifHBKy5g7S3RxxKf8rPaOKYt4O2oc/view?usp=sharing)
+
+
 - Add new products with image and category.
 - View category-wise sales in pie chart format.
 - Manage all customer orders and update their status in real-time.
 
 ### 🧑 User Features
+[▶️ Search Feature ](https://drive.google.com/file/d/18xBeUHuicni2wbKL2EiGyODQX0lEbk4T/view?usp=sharing)
+[▶️ Adding to Cart ](https://drive.google.com/file/d/1wPEuq4iedfnuU_013MSLjz0fbNcUbyJD/view?usp=sharing)
+[▶️ Order ](https://drive.google.com/file/d/1ZjhUFsLyc9-z980ZDHUamaSelSzGrUmb/view?usp=sharing)
+
+
 - View personalized "Deal of the Day".
 - Browse products by category.
 - Search for products and view detailed info.
@@ -43,14 +53,20 @@ This app supports both **Admin** and **User** functionalities, aiming to replica
 - Secure order placement after address validation.
 
 ### ⭐ Product Rating
+[▶️ Rate the Product ](https://drive.google.com/file/d/1e2RAUvCA9gxHm6DyG4b0GCD9Z-tH3q4o/view?usp=sharing)
 - Users can rate products.
 - Real-time average rating displayed for each product.
 
 ### 🛒 Cart Management
+[▶️ Adding to Cart ](https://drive.google.com/file/d/1wPEuq4iedfnuU_013MSLjz0fbNcUbyJD/view?usp=sharing)
+
 - Live cart updates with quantity changes.
 - Cart state synced across screens via Provider.
 
 ### 📦 Order & Order Status
+[▶️ Update Order Status-By Admin ](https://drive.google.com/file/d/119XifHBKy5g7S3RxxKf8rPaOKYt4O2oc/view?usp=sharing)
+[▶️ Get Updated Order Status ](https://drive.google.com/file/d/1QlgEpOleXWqGKKgEeCREnBabiQRNu2ol/view?usp=sharing)
+
 - Users can place multiple orders.
 - Admin can update order statuses in real-time.
 
