@@ -26,8 +26,9 @@ This app supports both **Admin** and **User** functionalities, aiming to replica
 - JWT-based authentication system.
 - Persistent login state using tokens.
 
-### 🛠️ Admin Capabilities
-![Untitled (590 x 300 px)](https://github.com/user-attachments/assets/60b93d24-ac6d-4be6-9783-b1f31a51ebc7)
+### 🛠️ Admin Features
+![Untitled (590 x 300 px) (1)](https://github.com/user-attachments/assets/2a6b54c3-5088-4eef-8525-2ba04ecd2c25)
+
 
 
 [▶️ Adding a Product ](https://drive.google.com/file/d/1VjKGDN0zfrrlxPrJ1H_GO-yk-WRystux/view?usp=sharing)
@@ -39,7 +40,7 @@ This app supports both **Admin** and **User** functionalities, aiming to replica
 - Manage all customer orders and update their status in real-time.
 
 ### 🧑 User Features
-![Untitled design (5)](https://github.com/user-attachments/assets/aa1ef9bb-01d5-47e1-a803-81e6463093fe)
+![Untitled (900 x 300 px)](https://github.com/user-attachments/assets/bbbee1a0-55fe-485e-82a3-516cdbc203c5)
 
 
 
