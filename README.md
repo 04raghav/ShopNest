@@ -1,7 +1,7 @@
 # 🛍️ ShopNest
 
 [▶️ demo video ](https://drive.google.com/file/d/1Znt-3ZdSkN1T49by000y6jchNE-HqwMi/view?usp=sharing )
-attach the above link to demo video of shopnest
+
 
 
 **ShopNest** is a full-stack E-commerce application built using the **Flutter** framework for the frontend and **Node.js + Express.js** for the backend. It uses **MongoDB** as the database and **Provider** for state management.
