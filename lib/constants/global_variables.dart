@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String uri = "http://192.168.1.38:3000";
+String uri = "https://shopnest-czu3.onrender.com";
 
 class GlobalVariables {
   static const appBarGradient = LinearGradient(

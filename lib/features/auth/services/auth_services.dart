@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:shopnest/Common/bottom_bar.dart';
 import 'package:shopnest/constants/global_variables.dart';
 import 'package:shopnest/constants/http_erros.dart';
 import 'package:shopnest/constants/utils.dart';
@@ -73,7 +74,7 @@ class AuthServices {
 
             if (context.mounted) {
               Navigator.pushNamedAndRemoveUntil(
-                  context, HomeScreen.routeName, (route) => false);
+                  context, BottomBar.routeName, (route) => false);
             }
           });
     } catch (e) {

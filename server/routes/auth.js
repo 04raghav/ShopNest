@@ -30,8 +30,6 @@ authRouter.post('/api/signup',async (req,res)=>{
     catch(e){
         res.status(500).json({error:e.message})
     }
-    
-
 });
 
 authRouter.post('/api/signin',async (req,res)=>{

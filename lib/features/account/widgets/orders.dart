@@ -5,8 +5,6 @@ import 'package:shopnest/features/account/widgets/single_product.dart';
 import 'package:flutter/material.dart';
 import 'package:shopnest/features/order_details/screens/order_details_screen.dart';
 import 'package:shopnest/models/order.dart';
-import 'package:provider/provider.dart';
-import 'package:shopnest/providers/user_provider.dart';
 
 class Orders extends StatefulWidget {
   const Orders({super.key});
@@ -21,7 +19,6 @@ class _OrdersState extends State<Orders> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     fetchMyOrder();
   }

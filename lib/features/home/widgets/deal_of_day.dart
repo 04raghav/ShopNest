@@ -23,7 +23,9 @@ class _DealOfDayState extends State<DealOfDay> {
 
   void fetchDealOfDay() async {
     product = await homeServices.fetchDealofDay(context: context);
+    if (mounted) {
     setState(() {});
+  }
   }
   
   @override

@@ -3,7 +3,6 @@ import 'package:shopnest/constants/global_variables.dart';
 import 'package:shopnest/features/admin/screens/admin_screen.dart';
 import 'package:shopnest/features/auth/screens/auth_screen.dart';
 import 'package:shopnest/features/auth/services/auth_services.dart';
-import 'package:shopnest/features/home/screens/home_screen.dart';
 import 'package:shopnest/providers/user_provider.dart';
 import 'package:shopnest/router.dart';
 import 'package:flutter/material.dart';

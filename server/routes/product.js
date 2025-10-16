@@ -60,6 +60,9 @@ productRouter.get("/api/deal-of-day",auth,async(req,res)=>{
 
     try{
         let products = await Product.find({});
+        if (!products.length) {
+            return res.status(404).json({ error: "No products available" });
+        }
         products=products.sort((p1,p2)=>{
         p1Sum=0
         p2Sum=0

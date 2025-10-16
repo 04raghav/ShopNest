@@ -1,4 +1,5 @@
 import 'package:shopnest/constants/global_variables.dart';
+import 'package:shopnest/features/account/services/account_services.dart';
 import 'package:shopnest/features/admin/screens/analytics_screen.dart';
 import 'package:shopnest/features/admin/screens/order_screen.dart';
 import 'package:shopnest/features/admin/screens/posts_screen.dart';
@@ -46,7 +47,7 @@ class _AdminScreenState extends State<AdminScreen> {
               Container(
                 alignment: Alignment.topLeft,
                 child: Image.asset(
-                  'assets/images/amazon_in.png',
+                  'assets/images/shopnest.png',
                   width: 120,
                   height: 45,
                   color: Colors.black,
@@ -56,6 +57,11 @@ class _AdminScreenState extends State<AdminScreen> {
                 'Admin',
                 style: TextStyle(fontWeight: FontWeight.w500),
               ),
+              ElevatedButton(
+                  onPressed: () {
+                    AccountServices().logout(context);
+                  },
+                  child: Icon(Icons.logout))
             ],
           ),
         ),
