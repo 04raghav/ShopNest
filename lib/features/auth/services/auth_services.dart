@@ -82,32 +82,37 @@ class AuthServices {
     }
   }
 
-  void getUserData({
-    required BuildContext context,
-  }) async {
+  Future<void> getUserData({required BuildContext context}) async {
     try {
       SharedPreferences prefs = await SharedPreferences.getInstance();
-      String? token = prefs.getString(
-          'x-auth-token'); //token can be null if user is first time using
-      if (token == null) {
-        prefs.setString('x-auth-token', '');
+      String token = prefs.getString('x-auth-token') ?? '';
+
+      if (token.isEmpty) {
+        return;
       }
-      var tokenRes = await http.post(Uri.parse("$uri/tokenIsValid"),
-          headers: <String, String>{
+
+      var tokenRes = await http.post(
+        Uri.parse("$uri/tokenIsValid"),
+        headers: {
+          'Content-Type': 'application/json;charset=UTF-8',
+          'x-auth-token': token,
+        },
+      );
+
+      bool isValid = jsonDecode(tokenRes.body);
+      if (isValid) {
+        http.Response userRes = await http.get(
+          Uri.parse('$uri/'),
+          headers: {
             'Content-Type': 'application/json;charset=UTF-8',
-            'x-auth-token': token!
-          });
-      var response = jsonDecode(tokenRes.body);
-      if (response == true) {
-        http.Response userRes = await http.get(Uri.parse('$uri/'),
-            headers: <String, String>{
-              'Content-Type': 'application/json;charset=UTF-8',
-              'x-auth-token': token
-            });
+            'x-auth-token': token,
+          },
+        );
         var userProvider = Provider.of<UserProvider>(context, listen: false);
         userProvider.setUser(userRes.body);
-        //get User Data
       }
-    } catch (e) {}
+    } catch (e, st) {
+      debugPrint('getUserData error: $e\n$st');
+    }
   }
 }

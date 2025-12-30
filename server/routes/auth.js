@@ -65,9 +65,7 @@ authRouter.post("/tokenIsValid" , async (req,res)=>{
     }
     catch(e){
         res.status(500).json({error:e.message});
-
     }
-
 });
 
 //getting the user data

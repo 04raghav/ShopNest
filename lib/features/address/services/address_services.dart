@@ -35,7 +35,6 @@ class AddressServices {
           User user = userProvider.user.copyWith(
             address: jsonDecode(res.body)['address'],
           );
-
           userProvider.setUserFromModel(user);
         },
       );
